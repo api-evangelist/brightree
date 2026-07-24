@@ -1,7 +1,26 @@
 aid: brightree
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brightree.png
 name: Brightree
-description: Brightree is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Brightree is a ResMed company providing cloud-based business management
+  software for post-acute care providers, including home medical equipment (HME),
+  durable medical equipment (DME), home infusion and specialty pharmacy, orthotics
+  and prosthetics, and home health and hospice organizations. Its platform automates
+  the end-to-end operational workflow from intake, documentation and inventory through
+  billing, delivery, resupply, and patient engagement. Brightree does not publish a
+  public, self-service developer API; integrations are delivered through a partner-gated
+  Integrated Vendor program, so this profile is limited to the company's public web
+  presence rather than a developer portal or machine-readable API surface.
 url: https://raw.githubusercontent.com/api-evangelist/brightree/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +30,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Home Medical Equipment
+- DME
+- HME
+- Pharmacy
+- Post-Acute Care
+- Health IT
+- ResMed
 apis: []
+common:
+- type: DomainSecurity
+  url: security/brightree-domain-security.yml
+- type: Website
+  url: https://www.brightree.com
+- type: Integrations
+  url: https://www.brightree.com/integrations/
+- type: Blog
+  url: https://www.brightree.com/blogs/
+- type: Support
+  url: https://www.brightree.com/professional-services-customer-support/
+- type: Login
+  url: https://www.brightree.com/login/
+- type: PrivacyPolicy
+  url: https://www.resmed.com/en-us/privacy/?ref=brightree
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
